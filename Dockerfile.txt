@@ -1,0 +1,22 @@
+
+
+# Stage 2: Final image
+FROM python:3.11-slim
+
+# Set the working directory in the final image
+WORKDIR /app
+
+# Copy the Flask application files
+COPY . .
+
+# Expose port 3000 for the application
+EXPOSE 3000
+
+# Command to run the Flask application
+CMD ["python", "app.py"]
+
+
+
+
+
+.
