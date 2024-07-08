@@ -34,3 +34,7 @@ Application testing:-
 
  Invoke-WebRequest -Uri "http://192.168.199.228:30002"
 
+
+Challenges faced During Test of application:
+
+The port I mentioned was incorrect in service.yaml file due to which i wasn't able to connect with network. So i made changes in node port in nodeport in service file. 
