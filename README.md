@@ -11,18 +11,23 @@ docker push pateldhruvi7195/python-app2:latest
 Kubenetes Setup:-
 
 minikube start
+
 kubectl version --client
+
 kubectl cluster-info
 
 Kubernetes Deployment:-
 
 kubectl apply -f deployment.yaml
+
 kubectl apply -f service.yaml
 
 Kubernetes Deployment Verification:-
 
 kubectl get pods -o wide
+
 kubectl get services -o wide
+
 kubectl get nodes
 
 Application testing:-
