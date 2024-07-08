@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clo835-s24-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clo835-s24
+  template:
+    metadata:
+      labels:
+        app: clo835-s24
+    spec:
+      containers:
+        - name: clo835-s24
+          image: pateldhruvi7195/python-app2:latest
+          ports:
+            - containerPort: 3030
